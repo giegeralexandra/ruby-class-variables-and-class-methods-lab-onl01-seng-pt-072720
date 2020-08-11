@@ -29,7 +29,7 @@ class Song
   
   def self.genre_count 
     genre_hash = @@genres.group_by(&:itself)
-    genre_hash.tally.collect{|x,y| 
+    genre_hash.tally.collect{|x,y| x.merge
   end
   
   def self.artist_count 
