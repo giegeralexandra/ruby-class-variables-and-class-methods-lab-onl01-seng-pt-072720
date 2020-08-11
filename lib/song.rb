@@ -15,6 +15,12 @@ class Song
     @@genres << genre
   end
   
+  def self.count 
+    @@count
+  end
+  
+  def artist
+  
   attr_accessor :name, :artist, :genre 
   
 
