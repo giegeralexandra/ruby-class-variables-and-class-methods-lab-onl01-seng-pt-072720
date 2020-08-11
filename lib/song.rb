@@ -28,8 +28,8 @@ class Song
   end
   
   def self.genre_count 
-    
-    @genres.tally.collect{|genre, 
+    genre_hash = @@genres.group_by(&:itself)
+    genre_hash.tally.collect{|x,y| 
   end
   
   def self.artist_count 
