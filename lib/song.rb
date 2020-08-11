@@ -33,7 +33,7 @@ class Song
   end
   
   def self.artist_count 
-    artist_hash = @@artist.group_by(&:itself)
+    artist_hash = @@artists.group_by(&:itself)
     artist_hash.collect{|k,v| [k,v.length]}.to_h
   end
   
