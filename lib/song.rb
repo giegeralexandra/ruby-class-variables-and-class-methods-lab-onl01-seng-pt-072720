@@ -30,6 +30,7 @@ class Song
   def self.genre_count 
     genre_hash = {}
     @@genres.each do 
+      .group_by(&:itself)
   end
   
   def self.artist_count 
