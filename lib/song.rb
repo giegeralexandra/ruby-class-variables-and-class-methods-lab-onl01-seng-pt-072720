@@ -11,7 +11,7 @@ class Song
     @artist = artist
     @genre = genre 
     @@count += 1
-    if @@artists.include?(artist) == false
+    if @@artists.include?("#{artist}") == false
       @@artists << artist 
     end
     if @@genres.include?(genre) == false
